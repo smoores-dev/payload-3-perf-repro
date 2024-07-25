@@ -27,6 +27,7 @@
     "sharp": "0.32.6"
   },
   "devDependencies": {
+    "@swc/core": "^1.7.2",
     "@types/node": "^20.12.12",
     "@types/react": "npm:types-react@19.0.0-rc.0",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0",
@@ -46,5 +47,6 @@
   "overrides": {
     "@types/react": "npm:types-react@19.0.0-rc.0",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0"
-  }
+  },
+  "packageManager": "yarn@4.3.1"
 }
