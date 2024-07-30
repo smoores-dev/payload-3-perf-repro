@@ -18,14 +18,12 @@ export const PageContentBlock: Block = {
       name: 'content',
       type: 'richText',
       editor: lexicalEditor({
-        features({ defaultFeatures }) {
-          return defaultFeatures
-            .filter(({ key }) => key !== 'blockquote')
-            .concat(
-              BlocksFeature({
-                blocks: [CardsBlock],
-              }),
-            )
+        features() {
+          return [
+            BlocksFeature({
+              blocks: [CardsBlock],
+            }),
+          ]
         },
       }),
       required: true,
